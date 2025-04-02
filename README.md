@@ -33,74 +33,72 @@ This website serves as the online presence for the TIT (Technocrats Institute of
 
 The project structure is organized as follows:
 
-
 vite-react-typescript-starter/
-├── .bolt/                     # Bolt configuration (if applicable)
-├── src/                        # Source code
-│   ├── audio/                  # Audio files and logic
-│   ├── components/             # Reusable React components
-│   │   ├── forms/              # Form components
-│   │   ├── sections/           # Sections for the homepage
-│   │   ├── shared/              # Shared components (e.g., Modal, ErrorBoundary)
-│   │   ├── About.tsx           # About section component
-│   │   ├── ArrivalAnimation.tsx# Initial loading animation
-│   │   ├── CountUp.tsx         # Count-up animation component
-│   │   ├── Dashboard.tsx       # Dashboard component (if applicable)
-│   │   ├── DynamicText.tsx     # Dynamic text animation component
-│   │   ├── Events.tsx          # Events section component
-│   │   ├── FloatingCube.tsx    # 3D floating cube component
-│   │   ├── Footer.tsx          # Footer component
-│   │   ├── Gallery.tsx         # Gallery component
-│   │   ├── HallOfFame.tsx      # Hall of Fame component
-│   │   ├── Home.tsx            # Home component
-│   │   ├── Join.tsx            # Join section component
-│   │   ├── Mentors.tsx         # Mentors section component
-│   │   ├── Navigation.tsx      # Navigation component
-│   │   ├── ParticleBackground.tsx # Animated particle background
-│   │   ├── Profile.tsx         # Profile component (if applicable)
-│   ├── pages/                  # Page components
-│   │   ├── AboutPage.tsx       # About page
-│   │   ├── DashboardPage.tsx   # Dashboard page (if applicable)
-│   │   ├── EventsPage.tsx      # Events page
-│   │   ├── GalleryPage.tsx     # Gallery page
-│   │   ├── HallOfFamePage.tsx  # Hall of Fame page
-│   │   ├── HomePage.tsx        # Home page
-│   │   ├── JoinPage.tsx        # Join page
-│   │   ├── MentorsPage.tsx     # Mentors page
-│   │   ├── ProfilePage.tsx     # Profile page (if applicable)
-│   │   ├── TryPreparationPage.tsx # Try Preparation page
-│   ├── App.tsx               # Main application component
-│   ├── index.css             # Global CSS styles
-│   ├── main.tsx              # Entry point for the React application
-│   ├── vite-env.d.ts         # TypeScript environment declarations
-│   ├── audio/
-│   │   └── gameAudio.ts      # Manages audio playback
-│   ├── components/
-│   │   └── forms/            # Reusable form components
-│   │       ├── BecomeMentorForm.tsx # Form to apply to become a mentor
-│   │       ├── BookSessionForm.tsx  # Form to book a mentoring session
-│   │       └── RegisterForm.tsx   # Form to register for an event
-│   ├── components/
-│   │   └── sections/         # Reusable sections for the homepage
-│   │       ├── CallToActionSection.tsx # Call to action section
-│   │       ├── FeaturesSection.tsx  # Features section
-│   │       ├── HeroSection.tsx      # Hero section
-│   │       ├── ImpactSection.tsx    # Impact section
-│   │       └── TimelineSection.tsx  # Timeline section
-│   ├── components/
-│   │   └── shared/           # Shared components
-│   │       ├── ErrorBoundary.tsx  # Error boundary component
-│   │       ├── Image.tsx          # Image component with lazy loading
-│   │       └── Modal.tsx          # Modal component
-├── public/                     # Public assets (e.g., images, fonts)
-├── index.html                # Main HTML file
-├── vite.config.ts            # Vite configuration file
-├── tailwind.config.js        # Tailwind CSS configuration file
-├── postcss.config.js         # PostCSS configuration file
-├── tsconfig.json             # TypeScript configuration file
-├── eslint.config.js          # ESLint configuration file
-├── README.md                 # This file
-├── package.json              # Node.js package manifest
+├── .bolt/                     # Bolt-related configuration (if applicable)
+├── node_modules/              # Node.js dependencies (not typically in README)
+├── public/                    # Static assets (images, fonts, etc.)
+│   ├── vite.svg               # Vite logo
+│   └── ...
+├── src/                       # Source code directory
+│   ├── audio/                 # Audio files and logic
+│   │   └── gameAudio.ts       # Manages game audio
+│   ├── components/            # React components
+│   │   ├── forms/             # Form components
+│   │   │   ├── BecomeMentorForm.tsx
+│   │   │   ├── BookSessionForm.tsx
+│   │   │   └── RegisterForm.tsx
+│   │   ├── sections/          # Reusable sections for pages
+│   │   │   ├── CallToActionSection.tsx
+│   │   │   ├── FeaturesSection.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── ImpactSection.tsx
+│   │   │   └── TimelineSection.tsx
+│   │   ├── shared/            # Shared components
+│   │   │   ├── ErrorBoundary.tsx
+│   │   │   ├── Image.tsx
+│   │   │   └── Modal.tsx
+│   │   ├── About.tsx            # About section component
+│   │   ├── ArrivalAnimation.tsx # Initial animation component
+│   │   ├── CountUp.tsx          # Count-up animation component
+│   │   ├── Dashboard.tsx        # Dashboard component
+│   │   ├── DynamicText.tsx      # Dynamic text component
+│   │   ├── Events.tsx           # Events section component
+│   │   ├── FloatingCube.tsx     # 3D cube component
+│   │   ├── Footer.tsx           # Footer component
+│   │   ├── Gallery.tsx          # Gallery component
+│   │   ├── HallOfFame.tsx       # Hall of Fame component
+│   │   ├── Home.tsx             # Home section component
+│   │   ├── Join.tsx             # Join section component
+│   │   ├── Mentors.tsx          # Mentors section component
+│   │   ├── Navigation.tsx       # Navigation component
+│   │   ├── ParticleBackground.tsx # Particle background component
+│   │   ├── Profile.tsx          # Profile component
+│   ├── pages/                 # React pages
+│   │   ├── AboutPage.tsx
+│   │   ├── DashboardPage.tsx
+│   │   ├── EventsPage.tsx
+│   │   ├── GalleryPage.tsx
+│   │   ├── HallOfFamePage.tsx
+│   │   ├── HomePage.tsx
+│   │   ├── JoinPage.tsx
+│   │   ├── MentorsPage.tsx
+│   │   ├── ProfilePage.tsx
+│   │   └── TryPreparationPage.tsx
+│   ├── App.tsx                # Main application component
+│   ├── index.css              # Global CSS styles
+│   ├── main.tsx               # Entry point for React
+│   ├── vite-env.d.ts          # TypeScript environment declarations
+├── .eslintrc.cjs            # ESLint configuration
+├── index.html               # Main HTML file
+├── package.json             # Project dependencies and scripts
+├── postcss.config.js        # PostCSS configuration
+├── tailwind.config.js       # Tailwind CSS configuration
+├── tsconfig.app.json        # TypeScript application configuration
+├── tsconfig.json            # Main TypeScript configuration
+├── tsconfig.node.json       # TypeScript Node.js configuration
+├── vite.config.ts           # Vite configuration
+└── README.md                # Project documentation (this file)
+
 
 
 ## Setup Instructions
